@@ -1,37 +1,43 @@
-# DevOps Lab: GitLab Flow Implementation for Continuous Integration
 
-## Project Overview 📊
-This repository demonstrates the implementation of **GitLab Flow** as a branching strategy in a DevOps pipeline. It includes detailed documentation on how to effectively use **Git Merge** for feature branch integration and provides visual diagrams to help understand the process.
+# DevOpsDiaries 🚀
 
-## Branching Strategy: GitLab Flow 🌱
-**GitLab Flow** combines the best of **Git Flow** and **GitHub Flow**, offering a flexible yet structured approach to managing feature development and continuous integration. It allows teams to focus on rapid feature delivery while maintaining stability in the `main` branch.
+Welcome to **DevOpsDiaries**! This repository is dedicated to documenting my learning journey in DevOps through the SoftServe and Cisco Project Lab.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/a5381aa7-d69e-438f-8bc5-cc4b12b75c11" alt="GitLab Flow Diagram" width="330"/>
-</div> 
+## Table of Contents
+1. [Overview](#overview)
+2. [Topics Covered](#topics-covered)
+3. [Wikis](#wikis)
+4. [Learning Resources](#learning-resources)
+5. [Contributing](#contributing)
 
-### Key Features of GitLab Flow 🔑:
-- **Main Branch (`main`)**: The stable, production-ready branch.
-- **Feature Branches**: Created for developing new features, with independent changes from `main`.
-- **Merge Requests (MRs)**: The process used to integrate feature branches back into `main` after code review and testing.
+## Overview 📖
+This repository serves as a comprehensive guide to my DevOps studies. Here, you will find detailed notes, practical examples, and exercises covering various DevOps topics. It's a living document where I will continually add new content as I progress through the course. These notes are a reflection of my learning and are meant to help others emulate or study as a reference.
 
-## Git Merge Command 🔀
-The **`git merge`** command is a critical part of the GitLab Flow workflow. It is used to combine changes from a feature branch into the `main` branch, ensuring that code changes are reviewed, tested, and merged into the stable codebase.
+## Topics Covered 🛠️
+- DevOps Fundamentals
+- Continuous Integration and Continuous Deployment (CI/CD)
+- Infrastructure as Code (IaC)
+- Monitoring and Logging
+- Containerization and Orchestration
+- Branching Strategies
+- Git Commands
+- Jira
+- Linux
+- And more...
 
-### How to use `git merge`:
-```bash
-git checkout main            # Switch to main branch
-git pull origin main         # Pull latest changes from main
-git merge feature/my-feature # Merge feature branch into main
-git push origin main         # Push changes to remote repository
-```
+## Wikis 📚
+- **GitLab Flow**: Overview of the branching strategy and Git merge commands.
+- **Jira**: Guide on using Jira for project management.
+- **Intro to Linux**: Basic commands and concepts to get started with Linux.
 
-## Benefits of GitLab Flow 🚀:
-- **Increased Flexibility**: Allows feature development to proceed without interrupting the stability of the main branch.
-- **Efficient Collaboration**: Teams can collaborate on features and merge them into `main` when ready, avoiding conflicts.
-- **Continuous Delivery**: Ensures that code can be continuously integrated, tested, and deployed.
+## Learning Resources 📖💡
+- [Coursera DevOps and Software Engineering Professional Certificate](https://www.coursera.org/professional-certificates/devops-and-software-engineering?myLearningTab=IN_PROGRESS&page=1)
+- [Official Git Documentation](https://git-scm.com/doc)
+- [Python Documentation](https://docs.python.org/)
+- [Linux Documentation](https://www.kernel.org/doc/html/latest/)
+- [Docker Documentation](https://docs.docker.com/)
+- [Jira Documentation](https://confluence.atlassian.com/jira)
 
-## How to Get Started 🚀:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/MariferVL/devops-lab-gitlabflow.git
+## Contributing 🤝
+Contributions are welcome! If you find any errors or have suggestions for additional content, please feel free to open an issue or submit a pull request.
+
