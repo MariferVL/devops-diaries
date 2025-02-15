@@ -36,7 +36,7 @@ This repository serves as a comprehensive guide to my DevOps studies. Here, you 
 - [Python Documentation](https://docs.python.org/)
 - [Linux Documentation](https://www.kernel.org/doc/html/latest/)
 - [Docker Documentation](https://docs.docker.com/)
-- [Jira Documentation](https://confluence.atlassian.com/jira)
+- [Jira Documentation](https://www.atlassian.com/es/software/jira/guides/getting-started/introduction)
 
 ## Contributing 🤝
 Contributions are welcome! If you find any errors or have suggestions for additional content, please feel free to open an issue or submit a pull request.
