@@ -31,7 +31,7 @@ python -m venv .venv
 While the example code doesn't have external dependencies right now, it's good practice to create a `requirements.txt` file. This will help you manage any future dependencies for the project:
 
 ```bash
-echo "colorama" > requirements.txt
+echo colorama > requirements.txt
 pip install -r requirements.txt
 ```
 
