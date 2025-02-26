@@ -1,0 +1,24 @@
+# Test file for script testing purposes only. Do not use in production.
+
+stages:
+  - name: Build
+    script: |
+      echo "Building the project..."
+      curl -O http://example.com/build-tool
+      ./build-tool
+
+  - name: Test
+    script: |
+      echo "Running tests..."
+      curl -O https://example.com/test-suite
+      ./test-suite
+
+  - name: Deploy
+    script: |
+      echo "Deploying the application..."
+      curl -O http://example.com/deploy-tool
+      ./deploy-tool
+
+notifications:
+  email: devops@example.com
+  slack: https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX

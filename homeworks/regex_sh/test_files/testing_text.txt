@@ -1,0 +1,23 @@
+The    Linux    operating   system   is   widely  used  in  servers  and
+embedded systems. Many developers prefer Linux for its flexibility and
+open-source  nature.  In  contrast,  other developers  may  choose  operating
+systems like Windows, bash, or macOS for their specific needs. There are
+numerous distributions of Linux, such as Ubuntu, Fedora, and CentOS. It's
+common to see Linux running on everything from powerful servers to small
+IoT devices. Linux is known for its strong security features and stability.
+If you are new to Linux, there are plenty of online resources and communities
+to help you get started. Some users enjoy the customization options available
+in  Linux,  while  others  find  it  challenging to  navigate. Despite these
+differences, the tech community continues to support and improve all operating
+systems. Additionally, it's important to understand different shell environments
+like Bash, Zsh, and Fish to maximize productivity. Many scripts are written in 
+Bash, and knowing Bash scripting is a valuable skill for developers. The root
+user in Linux has all administrative privileges. Avoid using the root account for 
+day-to-day tasks to prevent accidental changes. However, be mindful of not confusing 
+'root' with terms like 'root123' or 'root_system', as well as variations such as 
+'roots' or 'uprooted'.
+
+This line has a word with three consecutive vowels: queue.
+Another example is the word beautiiful.
+Some lines won't match this regex pattern.
+But this line will: seee.

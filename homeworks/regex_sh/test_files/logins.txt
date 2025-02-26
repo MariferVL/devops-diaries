@@ -1,0 +1,7 @@
+# Test file for script testing purposes only. Do not use in production.
+
+jdoe     pts/0        192.168.1.10     Wed Feb 26 14:23   still logged in
+asmith   pts/1        10.0.0.1         Wed Feb 26 14:20 - 14:22  (00:02)
+jdoe     pts/2        172.16.0.5       Wed Feb 26 14:10 - 14:20  (00:10)
+tjohnson pts/3        192.168.1.11     Wed Feb 26 14:00 - 14:10  (00:10)
+admin    pts/4        10.0.0.2         Wed Feb 26 13:50 - 14:00  (00:10)

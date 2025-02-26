@@ -1,0 +1,17 @@
+# Test file for script testing purposes only. Do not use in production.
+
+INFO: Server started at 2025-02-26 14:23:12
+INFO: Listening on 192.168.1.10:80
+ERROR: Failed to bind to 192.168.1.10:443
+WARN: Access denied for user 'admin'
+INFO: New connection from 172.16.0.5
+WARN: Connection from 172.16.0.5 closed unexpectedly
+INFO: Listening on 10.0.0.1:8080
+ERROR: Unable to connect to 10.0.0.1
+INFO: Server started at 2025-02-26 14:23:12
+INFO: Listening on [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:80
+ERROR: Failed to bind to [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:443
+INFO: New connection from [fe80::1ff:fe23:4567:890a]
+WARN: Connection from [fe80::1ff:fe23:4567:890a] closed unexpectedly
+INFO: Listening on [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:8080
+ERROR: Unable to connect to [2001:0db8:85a3:0000:0000:8a2e:0370:7334]

@@ -1,0 +1,7 @@
+2025-02-25 10:15:32 INFO Starting the application.
+2025-02-25 10:16:45 WARNING Low memory detected.
+2025-02-25 10:18:22 ERROR Failed to connect to the database.
+2025-02-25 10:19:00 INFO Application running.
+2025-02-25 10:20:15 WARNING Disk space running low.
+2025-02-25 10:21:30 INFO Application stopped.
+2025-02-25 10:22:00 SUCCESS Backup completed successfully.

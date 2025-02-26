@@ -1,0 +1,18 @@
+# Test file for script testing purposes only. Do not use in production.
+
+alerts:
+  - type: email
+    address: admin@example.com
+    level: critical
+  - type: email
+    address: support@company.com
+    level: warning
+  - type: email
+    address: devops@service.net
+    level: info
+  - type: sms
+    number: "+1234567890"
+    level: emergency
+  - type: email
+    address: alerts@website.io
+    level: critical

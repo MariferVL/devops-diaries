@@ -1,0 +1,35 @@
+# Test file for script testing purposes only. Do not use in production.
+
+version: '3'
+services:
+  web:
+    image: myapp
+    ports:
+      - "5000:5000"
+    environment:
+      - ENV=production
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+        tag: "web"
+        labels: "com.example.service"
+  database:
+    image: postgres
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+        tag: "database"
+        labels: "com.example.service"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U myuser || echo ERROR: Postgres is not ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
