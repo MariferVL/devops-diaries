@@ -1,0 +1,69 @@
+# ==================================================
+# .gitignore file for DevOps Diaries
+# ==================================================
+# This repository stores:
+#   - Documents, notes, and cheat sheets
+#   - Images
+#   - Homework projects
+#
+
+###########################
+# Operating System Files  #
+###########################
+.DS_Store
+Thumbs.db
+
+###########################
+# Editor and IDE Settings #
+###########################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+###########################
+# Python Specific Files   #
+###########################
+# Byte-compiled files and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments 
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging directories
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+###########################
+# Log Files and Temporary #
+###########################
+*.log
+*.tmp
+*.temp
+
+###########################
+# Backup and Swap Files   #
+###########################
+*.bak
+*.swp
+
+# =============================
+# End of .gitignore
+# =============================
