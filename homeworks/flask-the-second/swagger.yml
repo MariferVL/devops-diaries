@@ -1,0 +1,155 @@
+swagger: "2.0"
+info:
+  title: DevOps Chronicles API
+  description: API documentation for the DevOps Chronicles educational project.
+  version: "1.0.0"
+host: localhost:5000
+schemes:
+  - http
+basePath: /
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /hero/:
+    post:
+      tags:
+        - Heroes
+      summary: Create a new DevOps hero
+      description: Create a new DevOps hero with initial attributes.
+      parameters:
+        - in: body
+          name: body
+          description: Hero object that needs to be added
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+              - role
+            properties:
+              name:
+                type: string
+                example: MariferVL
+              role:
+                type: string
+                example: DevOps Engineer
+      responses:
+        201:
+          description: "Hero created successfully"
+        400:
+          description: "Missing required fields: name and role"
+  /hero/{hero_id}:
+    get:
+      tags:
+        - Heroes
+      summary: Retrieve a hero's details
+      parameters:
+        - name: hero_id
+          in: path
+          required: true
+          type: integer
+          description: ID of the hero
+      responses:
+        200:
+          description: "Hero details retrieved successfully"
+        404:
+          description: "Hero not found"
+    put:
+      tags:
+        - Heroes
+      summary: Update a hero's attributes
+      parameters:
+        - name: hero_id
+          in: path
+          required: true
+          type: integer
+          description: ID of the hero
+        - in: body
+          name: body
+          description: Updated hero attributes
+          required: true
+          schema:
+            type: object
+            properties:
+              health:
+                type: integer
+              automation:
+                type: integer
+              experience:
+                type: integer
+              integrity:
+                type: integer
+      responses:
+        200:
+          description: "Hero updated successfully"
+        404:
+          description: "Hero not found"
+    delete:
+      tags:
+        - Heroes
+      summary: Delete a hero by ID
+      parameters:
+        - name: hero_id
+          in: path
+          required: true
+          type: integer
+          description: ID of the hero
+      responses:
+        200:
+          description: "Hero deleted successfully"
+        404:
+          description: "Hero not found"
+  /adventure/:
+    post:
+      tags:
+        - Adventures
+      summary: Initiate a new adventure for a hero
+      parameters:
+        - in: body
+          name: body
+          description: Adventure object that needs to be created
+          required: true
+          schema:
+            type: object
+            required:
+              - hero_id
+            properties:
+              hero_id:
+                type: integer
+                example: 0
+              challenge:
+                type: string
+                example: CI/CD pipeline meltdown
+      responses:
+        201:
+          description: "Adventure initiated successfully"
+        400:
+          description: "Missing required field: hero_id"
+        404:
+          description: "Hero not found"
+  /adventure/{adventure_id}:
+    get:
+      tags:
+        - Adventures
+      summary: Retrieve an adventure's details
+      parameters:
+        - name: adventure_id
+          in: path
+          required: true
+          type: integer
+          description: ID of the adventure
+      responses:
+        200:
+          description: "Adventure details retrieved successfully"
+        404:
+          description: "Adventure not found"
+  /adventure/history:
+    get:
+      tags:
+        - Adventures
+      summary: Retrieve a history of all adventures
+      responses:
+        200:
+          description: "List of all adventures"
