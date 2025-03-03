@@ -1,4 +1,3 @@
-```markdown
 # DevOps Chronicles API
 
 ## Project Overview
@@ -88,6 +87,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 For any questions or further information, please visit my [GitHub profile](https://github.com/MariferVL).
-```
 
 
